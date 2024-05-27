@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 65px 8%;
+  gap: 60px;
+  .imgBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .image {
+      width: 90%;
+      img {
+        width: 100%;
+      }
+    }
+    .imgText {
+      width: 60%;
+      background-color: #46ddb0;
+      padding-left: 25px;
+      padding: 20px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      position: absolute;
+      color: white;
+      justify-content: start;
+      text-align: start;
+      margin-top: 65%;
+      margin-left: 40%;
+      h2 {
+        font-size: 50px;
+      }
+      
+    }
+  }
+  .textBox {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    h3 {
+      font-size: 16px;
+      color: #adb5bd;
+    }
+    h1 {
+      font-size: 45px;
+    }
+    p {
+      letter-spacing: 1px;
+      color: #adb5bd;
+    }
+    Button {
+      background-color: black;
+      color: white;
+      font-weight: 600;
+      border: 2px solid black;
+      padding: 8px 14px;
+      cursor: pointer;
+      transition: 0.4s;
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 65px 8%;
+    gap: 60px;
+    .imgBox {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .image {
+        width: 90%;
+        img {
+          width: 100%;
+        }
+      }
+      .imgText {
+        width: 90%;
+        background-color: #46ddb0;
+        padding-left: 25px;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: absolute;
+        color: white;
+        justify-content: start;
+        text-align: start;
+        margin-top: 65%;
+        margin-left: 10%;
+        h2 {
+          font-size: 26px;
+        }
+      }
+    }
+    .textBox {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 20px;
+      h3 {
+        font-size: 16px;
+        color: #adb5bd;
+      }
+      h1 {
+        font-size: 45px;
+      }
+      p {
+        letter-spacing: 1px;
+        color: #adb5bd;
+      }
+      Button {
+        background-color: black;
+        color: white;
+        font-weight: 600;
+        border: 2px solid black;
+        padding: 8px 14px;
+        cursor: pointer;
+        transition: 0.4s;
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+}
